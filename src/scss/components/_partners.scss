@@ -1,0 +1,36 @@
+.left {
+  flex-direction: column;
+  position: relative;
+
+  .partners-details {
+    overflow: hidden;
+
+    div {
+      margin-top: 1.25em;
+      width: 124px;
+      height: 76px;
+    }
+
+    .sliders {
+      .slider-button-left,
+      .slider-button-right {
+        position: absolute;
+        top: 70px;
+        background: $btn-color-1;
+        padding: 0.34em;
+        border-radius: 50%;
+        height: 24px;
+        width: 24px;
+        font-size: 0.75rem;
+        color: $text-color-dark;
+      }
+
+      .slider-button-left {
+        left: 0;
+      }
+      .slider-button-right {
+        right: 0;
+      }
+    }
+  }
+}

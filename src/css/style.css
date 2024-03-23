@@ -30,6 +30,10 @@ img {
   object-fit: cover;
 }
 
+button {
+  border: none;
+}
+
 @font-face {
   font-family: "Garet";
   src: url("/src/assets/fonts/garet") format("ttf");
@@ -98,6 +102,10 @@ img {
   width: 100%;
   display: block;
   object-fit: cover;
+}
+
+button {
+  border: none;
 }
 
 @font-face {
@@ -176,6 +184,10 @@ img {
   width: 100%;
   display: block;
   object-fit: cover;
+}
+
+button {
+  border: none;
 }
 
 @font-face {
@@ -284,6 +296,37 @@ h2 {
 }
 .hero .hero-container .hero-video {
   margin-top: 2em;
+}
+
+.left {
+  flex-direction: column;
+  position: relative;
+}
+.left .partners-details {
+  overflow: hidden;
+}
+.left .partners-details div {
+  margin-top: 1.25em;
+  width: 124px;
+  height: 76px;
+}
+.left .partners-details .sliders .slider-button-left,
+.left .partners-details .sliders .slider-button-right {
+  position: absolute;
+  top: 70px;
+  background: #dbdbdb;
+  padding: 0.34em;
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  font-size: 0.75rem;
+  color: #353a3f;
+}
+.left .partners-details .sliders .slider-button-left {
+  left: 0;
+}
+.left .partners-details .sliders .slider-button-right {
+  right: 0;
 }
 
 .container {
