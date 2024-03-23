@@ -58,78 +58,8 @@ h2 {
   font-weight: 850;
 }
 
-.container {
-  padding-inline: 1rem;
-}
-
-.row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-section {
-  margin-top: 6.25em;
-}
-
-*,
-::after,
-::before {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-h1,
-h2,
-h3,
-p {
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-  display: inline-block;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-img {
-  width: 100%;
-  display: block;
-  object-fit: cover;
-}
-
-button {
-  border: none;
-}
-
-@font-face {
-  font-family: "Garet";
-  src: url("/src/assets/fonts/garet") format("ttf");
-  font-family: "Montserrat";
-  src: url("/src/assets/fonts/monsterrat") format("ttf");
-}
-body {
-  background: #fff;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  margin: 0 auto;
-}
-
-p {
-  color: #737373;
-}
-
-h1,
 h2 {
-  font-family: "Garet", serif;
-  color: #353a3f;
-  font-weight: 850;
+  font-size: clamp(1.5rem, 1.4rem + 0.5vw, 2rem);
 }
 
 .header {
@@ -152,66 +82,6 @@ h2 {
   background: #7868d8;
   color: #fff;
   border-radius: 8px;
-}
-
-*,
-::after,
-::before {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-h1,
-h2,
-h3,
-p {
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-  display: inline-block;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-img {
-  width: 100%;
-  display: block;
-  object-fit: cover;
-}
-
-button {
-  border: none;
-}
-
-@font-face {
-  font-family: "Garet";
-  src: url("/src/assets/fonts/garet") format("ttf");
-  font-family: "Montserrat";
-  src: url("/src/assets/fonts/monsterrat") format("ttf");
-}
-body {
-  background: #fff;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  margin: 0 auto;
-}
-
-p {
-  color: #737373;
-}
-
-h1,
-h2 {
-  font-family: "Garet", serif;
-  color: #353a3f;
-  font-weight: 850;
 }
 
 .hero .hero-container .hero_content {
@@ -329,6 +199,25 @@ h2 {
   right: 0;
 }
 
+.about-us {
+  background: #7868d8;
+  padding-block: 2em;
+  text-align: justify;
+}
+.about-us .container h2,
+.about-us .container p {
+  color: #fff;
+}
+.about-us .container p {
+  margin-top: 1.25em;
+  line-height: 1.42;
+  font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
+}
+
+.features .container {
+  grid-template-columns: 1fr 1fr;
+}
+
 .container {
   padding-inline: 1rem;
 }
@@ -337,6 +226,10 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.grid {
+  display: grid;
 }
 
 section {

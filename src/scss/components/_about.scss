@@ -1,0 +1,18 @@
+.about-us {
+  background: $primary-color;
+  padding-block: 2em;
+  text-align: justify;
+
+  .container {
+    h2,
+    p {
+      color: $white-color;
+    }
+
+    p {
+      margin-top: 1.25em;
+      line-height: 1.42;
+      font-size: $fs-medium2;
+    }
+  }
+}
