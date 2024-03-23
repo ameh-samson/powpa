@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "compile:sass": "sass --watch src/scss/main.scss src/css/style.css"
+  }
+}

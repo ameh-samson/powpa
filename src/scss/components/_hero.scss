@@ -1,0 +1,36 @@
+@import "../base/base";
+
+.hero {
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-block: 4em;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    font-size: $fs-hero-title;
+    max-width: 572px;
+    margin: 0 auto;
+
+    span {
+      color: $accent-color;
+    }
+  }
+
+  .hero-text {
+    padding-block: 2em;
+    font-size: $fs-medium1;
+    line-height: 1.25;
+  }
+
+  .get-started {
+    background: $primary-color;
+    color: $white-color;
+    border-radius: 8px;
+    padding: 0.86em 2.36em;
+    margin-bottom: 2em;
+  }
+}

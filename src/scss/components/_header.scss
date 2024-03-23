@@ -1,0 +1,29 @@
+@import "../colors/variables";
+@import "../layout/layout";
+@import "../base/base";
+
+.header {
+  background: $bg-color-2;
+  padding-block: 2em;
+
+  .logo {
+    width: 50px;
+  }
+
+  .login {
+    font-size: $fs-medium2;
+    gap: 0.86em;
+    text-transform: uppercase;
+
+    .login-text,
+    .get-started {
+      padding: 0.43em 0.86em;
+    }
+
+    .get-started {
+      background: $primary-color;
+      color: $white-color;
+      border-radius: 8px;
+    }
+  }
+}

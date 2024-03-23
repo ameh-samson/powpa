@@ -1,0 +1,22 @@
+@import "normalize";
+@import "typography";
+
+@import "../colors/variables";
+
+body {
+  background: $bg-color-2;
+  font-family: $sans-serif-font;
+  font-weight: 500;
+  margin: 0 auto;
+}
+
+p {
+  color: $text-light;
+}
+
+h1,
+h2 {
+  font-family: $serif-font;
+  color: $text-color-dark;
+  font-weight: 850;
+}
