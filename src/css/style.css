@@ -64,6 +64,10 @@ h2 {
   justify-content: space-between;
 }
 
+section {
+  margin-top: 6.25em;
+}
+
 *,
 ::after,
 ::before {
@@ -262,6 +266,9 @@ h2 {
   padding: 0.86em 2.36em;
   margin-bottom: 2em;
 }
+.hero .hero-container .hero-video {
+  margin-top: 2em;
+}
 
 .container {
   padding-inline: 1rem;
@@ -271,6 +278,10 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+section {
+  margin-top: 6.25em;
 }
 
 /*# sourceMappingURL=style.css.map */
