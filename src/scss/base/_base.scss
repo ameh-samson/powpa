@@ -1,13 +1,17 @@
 @import "normalize";
 @import "typography";
-
 @import "../colors/variables";
 
 body {
-  background: $white-color;
+  background: $bg-color-2;
   font-family: $sans-serif-font;
   font-weight: 500;
   margin: 0 auto;
+  line-height: 1.5;
+}
+
+.wrapper {
+  overflow: hidden;
 }
 
 p {
@@ -23,4 +27,5 @@ h2 {
 
 h2 {
   font-size: $fs-heading-2;
+  text-align: center;
 }

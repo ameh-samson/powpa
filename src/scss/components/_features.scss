@@ -1,5 +1,45 @@
-.features {
-  .container {
-    grid-template-columns: 1fr 1fr;
+.features-container {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "left"
+      "right";
+  }
+
+  .left {
+    grid-area: right;
+    margin-top: 1.5em;
+  }
+  .right {
+    grid-area: left;
+    margin-top: 1.5em;
+    margin: 0 auto;
+  }
+
+  .card {
+    max-width: 264px;
+    max-height: 204px;
+
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1.25em;
+    background: $white-color;
+    padding: 1em 0.65em;
+    border: 1px solid $btn-color-1;
+    border-radius: 4px;
+    box-shadow: 0px 2px 30px 0px #0000001a;
+
+    img {
+      width: 40px;
+    }
+    span {
+      font-size: $fs-medium1;
+      color: $text-color-dark;
+    }
+
+    p {
+      font-size: $fs-medium2;
+      color: $text-light;
+    }
   }
 }
