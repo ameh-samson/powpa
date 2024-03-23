@@ -37,7 +37,7 @@ img {
   src: url("/src/assets/fonts/monsterrat") format("ttf");
 }
 body {
-  background: #f8f8f8;
+  background: #fff;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   margin: 0 auto;
@@ -107,7 +107,7 @@ img {
   src: url("/src/assets/fonts/monsterrat") format("ttf");
 }
 body {
-  background: #f8f8f8;
+  background: #fff;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   margin: 0 auto;
@@ -126,7 +126,7 @@ h2 {
 
 .header {
   background: #f8f8f8;
-  padding-block: 2em;
+  padding-block: 1em;
 }
 .header .logo {
   width: 50px;
@@ -185,7 +185,7 @@ img {
   src: url("/src/assets/fonts/monsterrat") format("ttf");
 }
 body {
-  background: #f8f8f8;
+  background: #fff;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   margin: 0 auto;
@@ -240,10 +240,25 @@ h2 {
   height: auto;
 }
 .hero .hero-container .hero_content .hero-customer-feedback .customer-img-container p {
-  font-size: 10px;
+  font-size: clamp(0.625rem, 0.55rem + 0.375vw, 1rem);
   padding: 0.5em 1em;
-  background: #ccf1e6;
   border-radius: 8px;
+}
+.hero .hero-container .hero_content .hero-customer-feedback .customer-img-container:nth-child(1) p {
+  background: #ccf1e6;
+  color: #005c42;
+}
+.hero .hero-container .hero_content .hero-customer-feedback .customer-img-container:nth-child(2) p {
+  background: #feeef3;
+  color: #7a2a44;
+}
+.hero .hero-container .hero_content .hero-customer-feedback .customer-img-container:nth-of-type(3) p {
+  background: #fff9e5;
+  color: #806400;
+}
+.hero .hero-container .hero_content .hero-customer-feedback .customer-img-container:nth-of-type(4) p {
+  background: #d6e8f5;
+  color: #194567;
 }
 .hero .hero-container .hero_content .hero-title {
   font-size: 2rem;
@@ -256,6 +271,7 @@ h2 {
 }
 .hero .hero-container .hero_content .hero-text {
   padding-block: 2em;
+  font-size: 1rem;
   font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
   line-height: 1.25;
 }

@@ -46,10 +46,34 @@
           }
 
           p {
-            font-size: 10px;
+            font-size: $fs-hero-comment;
             padding: 0.5em 1em;
-            background: $secondary-color;
             border-radius: 8px;
+          }
+
+          &:nth-child(1) {
+            p {
+              background: $secondary-color;
+              color: $text-color-4;
+            }
+          }
+          &:nth-child(2) {
+            p {
+              background: $accent-color-2;
+              color: $text-color-3;
+            }
+          }
+          &:nth-of-type(3) {
+            p {
+              background: $secondary-color-2;
+              color: $text-color-5;
+            }
+          }
+          &:nth-of-type(4) {
+            p {
+              background: $secondary-color-3;
+              color: $text-color-6;
+            }
           }
         }
       }
@@ -67,6 +91,7 @@
 
       .hero-text {
         padding-block: 2em;
+        font-size: 1rem;
         font-size: $fs-medium1;
         line-height: 1.25;
       }
