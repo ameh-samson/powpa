@@ -284,6 +284,17 @@ h2 {
   color: #737373;
 }
 
+.signup-process .process {
+  margin-top: 2em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.signup-process .process div {
+  justify-content: start;
+}
+
 .container {
   padding-inline: 1rem;
 }
