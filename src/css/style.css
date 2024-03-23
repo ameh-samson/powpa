@@ -214,12 +214,12 @@ h2 {
   white-space: nowrap;
 }
 .partners-container .left .slider-container .partners-details {
-  gap: 10px;
+  gap: 1em;
 }
 .partners-container .left .slider-container img {
   margin-top: 1.25em;
   width: 124px;
-  height: 80px;
+  height: 150px;
 }
 .partners-container .left .slider-container .slider-button-left {
   left: 1em;
