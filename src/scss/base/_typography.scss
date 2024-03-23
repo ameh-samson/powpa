@@ -10,5 +10,6 @@ $sans-serif-font: "Montserrat", sans-serif;
 
 $fs-medium1: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
 $fs-medium2: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
-$fs-hero-title: clamp(2rem, 1.7rem + 1.5vw, 3.5rem);
+$fs-heading-1: clamp(2rem, 1.7rem + 1.5vw, 3.5rem);
+$fs-heading-2: clamp(1.5rem, 1.4rem + 0.5vw, 2rem);
 $fs-hero-comment: clamp(0.625rem, 0.55rem + 0.375vw, 1rem);
