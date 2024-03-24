@@ -1,6 +1,8 @@
 .footer {
   margin-top: 2.5em;
-  padding-block: 0.5em;
+  background: $bg-color;
+  padding-block: 1em;
+  box-shadow: 0px 2px 30px 0px #0000001a;
 
   .footer-container {
     display: grid;
