@@ -51,26 +51,26 @@
 
           &:nth-child(1) {
             p {
-              background: $secondary-color;
-              color: $text-color-4;
+              background: $color-secondary;
+              color: $text-color-hero-comment1;
             }
           }
           &:nth-child(2) {
             p {
-              background: $accent-color-2;
-              color: $text-color-3;
+              background: $color-accent-light;
+              color: $text-color-hero-comment2;
             }
           }
           &:nth-of-type(3) {
             p {
-              background: $secondary-color-2;
-              color: $text-color-5;
+              background: $color-secondary-light;
+              color: $text-color-hero-comment3;
             }
           }
           &:nth-of-type(4) {
             p {
-              background: $secondary-color-3;
-              color: $text-color-6;
+              background: $color-secondary-dark;
+              color: $text-color-hero-comment4;
             }
           }
         }
@@ -83,7 +83,7 @@
         margin: 0 auto;
 
         span {
-          color: $accent-color;
+          color: $color-accent;
         }
       }
 
@@ -95,8 +95,8 @@
       }
 
       .get-started {
-        background: $primary-color;
-        color: $white-color;
+        background: $color-primary;
+        color: $color-white;
         border-radius: 8px;
         padding: 0.86em 2.36em;
         margin-bottom: 2em;

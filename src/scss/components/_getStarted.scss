@@ -1,0 +1,36 @@
+.get-started {
+  background: $color-primary;
+  padding-block: 1.25em;
+
+  .get-started-details {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "col-1"
+      "col-2"
+      "col-3";
+
+    .col-1 {
+      grid-area: col-1;
+    }
+
+    .col-2 {
+      grid-area: col-3;
+    }
+
+    .col-3 {
+      grid-area: col-2;
+    }
+
+    h2,
+    p,
+    form {
+      color: $color-white;
+    }
+
+    p {
+      margin-block: 1.25em;
+      text-align: center;
+    }
+  }
+}

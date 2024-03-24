@@ -139,11 +139,11 @@ h2 {
 }
 .hero .hero-container .hero_content .hero-customer-feedback .customer-img-container:nth-child(1) p {
   background: #ccf1e6;
-  color: #005c42;
+  color: #7a2a44;
 }
 .hero .hero-container .hero_content .hero-customer-feedback .customer-img-container:nth-child(2) p {
   background: #feeef3;
-  color: #7a2a44;
+  color: #005c42;
 }
 .hero .hero-container .hero_content .hero-customer-feedback .customer-img-container:nth-of-type(3) p {
   background: #fff9e5;
@@ -293,6 +293,34 @@ h2 {
 }
 .signup-process .process div {
   justify-content: start;
+}
+
+.get-started {
+  background: #7868d8;
+  padding-block: 1.25em;
+}
+.get-started .get-started-details {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "col-1" "col-2" "col-3";
+}
+.get-started .get-started-details .col-1 {
+  grid-area: col-1;
+}
+.get-started .get-started-details .col-2 {
+  grid-area: col-3;
+}
+.get-started .get-started-details .col-3 {
+  grid-area: col-2;
+}
+.get-started .get-started-details h2,
+.get-started .get-started-details p,
+.get-started .get-started-details form {
+  color: #fff;
+}
+.get-started .get-started-details p {
+  margin-block: 1.25em;
+  text-align: center;
 }
 
 .container {

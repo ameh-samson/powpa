@@ -1,28 +1,29 @@
 // Primary Colors
-$primary-color: #7868d8;
-$primary-dark: #483e82;
-$white-color: #fff;
+$color-primary: #7868d8;
+$color-primary-dark: #483e82;
+$color-white: #fff;
 
 // Secondary Colors
-$secondary-color: #ccf1e6;
-$secondary-color-2: #fff9e5;
-$secondary-color-3: #d6e8f5;
+$color-secondary: #ccf1e6;
+$color-secondary-light: #fff9e5;
+$color-secondary-dark: #d6e8f5;
 
 // Accent Colors
-$accent-color: #5cd5dd; // Example orange color
-$accent-color-2: #feeef3;
+$color-accent: #5cd5dd;
+$color-accent-light: #feeef3;
 
 // Text Colors
 $text-color-dark: #353a3f;
-$text-light: #737373;
-$text-color-3: #7a2a44;
-$text-color-4: #005c42;
-$text-color-5: #806400;
-$text-color-6: #194567;
+$text-color-light: #737373;
 
-//Background Color
-$bg-color-2: #f8f8f8;
+// comments color
+$text-color-hero-comment1: #7a2a44;
+$text-color-hero-comment2: #005c42;
+$text-color-hero-comment3: #806400;
+$text-color-hero-comment4: #194567;
 
-// button-color
+// Background Color
+$bg-color: #f8f8f8;
 
-$btn-color-1: #dbdbdb;
+// Button Color
+$btn-color: #dbdbdb;

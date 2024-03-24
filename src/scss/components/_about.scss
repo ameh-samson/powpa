@@ -1,12 +1,12 @@
 .about-us {
-  background: $primary-color;
+  background: $color-primary;
   padding-block: 2em;
   text-align: justify;
 
   .container {
     h2,
     p {
-      color: $white-color;
+      color: $color-white;
     }
 
     p {
