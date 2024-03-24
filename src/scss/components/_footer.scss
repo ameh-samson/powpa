@@ -1,0 +1,45 @@
+.footer {
+  padding-block: 0.5em;
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "col-1 col-2"
+      "col-3 col-3";
+
+    .col-1 {
+      grid-area: col-1;
+    }
+
+    .col-2 {
+      grid-area: col-3;
+    }
+
+    .col-3 {
+      grid-area: col-2;
+    }
+
+    .powpa-logo {
+      width: 48px;
+    }
+
+    .social-logo {
+      width: 30px;
+    }
+
+    .playstore-logo {
+      width: 113px;
+    }
+
+    .social-icon-playstore {
+      justify-content: start;
+      gap: 10px;
+    }
+
+    p {
+      text-align: center;
+      margin-top: 1em;
+    }
+  }
+}
