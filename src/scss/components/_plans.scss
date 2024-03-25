@@ -74,6 +74,36 @@
         }
       }
 
+      // add styles for additional benefits
+
+      .addition-benefits-container {
+        text-align: center;
+
+        button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.5em;
+
+          background: $color-accent;
+          color: $color-white;
+          font-size: $fs-medium3;
+          font-weight: 700;
+          width: 100%;
+          padding-block: 0.75em;
+          border-radius: 8px;
+          font-size: 0.87rem;
+
+          .arror {
+            width: 20px;
+          }
+        }
+
+        p {
+          margin-top: 0.5em;
+        }
+      }
+
       .plan-benefits {
         .check-icon {
           width: 18px;
