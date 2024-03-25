@@ -1,0 +1,35 @@
+.plans {
+  .plan-type-btn-container {
+    margin-top: 1.25em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .monthly,
+  .yearly {
+    font-size: $fs-heading-3;
+    padding: 0.75em;
+    font-weight: 700;
+  }
+
+  .monthly {
+    background: $color-primary;
+    color: $color-white;
+    border-radius: 8px 0px 0px 8px;
+    border: 1px solid $color-primary;
+  }
+
+  .yearly {
+    color: $text-color-light;
+    background: none;
+    border-style: solid;
+    border-width: 2px 2px 2px 0; /* top right bottom left */
+    border-color: #a6a6a6;
+    border-radius: 0px 8px 8px 0px;
+  }
+
+  .plain-details {
+    margin-top: 2em;
+  }
+}
