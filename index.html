@@ -250,7 +250,13 @@
             <form class="get-started-form-input">
               <div>
                 <label for="emain">Email</label>
-                <input type="email" id="email" name="email" required />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="email@example.com"
+                  required
+                />
               </div>
 
               <div>
@@ -260,11 +266,13 @@
                   id="whatsapp"
                   name="whatsapp"
                   pattern="[0-9]{10}"
+                  placeholder="080348923**"
                   required
                 />
-                <small>Enter 11 digits whatsApp number</small>
               </div>
-              <button type="submit">Start free trial</button>
+              <div class="btn-container">
+                <a class="btn" type="submit">Start free trial</a>
+              </div>
             </form>
 
             <div class="right get-started-img">

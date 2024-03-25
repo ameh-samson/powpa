@@ -427,30 +427,30 @@ button {
 }
 .get-started .get-started-details .get-started-form-input div input {
   width: 100%;
-  padding: 1em 0.5em;
+  padding: 0.8em 0.5em;
   font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
   color: #a6a6a6;
   border: none;
   border-radius: 5px;
   outline: none;
 }
-.get-started .get-started-details .get-started-form-input div small {
-  font-size: 0.75rem;
-  color: #fff;
+.get-started .get-started-details .get-started-form-input .btn-container {
+  text-align: center;
 }
-.get-started .get-started-details .get-started-form-input button {
-  width: 100%;
+.get-started .get-started-details .get-started-form-input .btn-container .btn {
+  display: inline-block;
   padding: 0.75em;
   font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
   font-weight: 500;
   text-transform: uppercase;
+  background: #fff;
   color: #483e82;
-  border: none;
+  border: 1px solid #483e82;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.get-started .get-started-details .get-started-form-input button:hover {
+.get-started .get-started-details .get-started-form-input .btn-container .btn:hover {
   background-color: #0056b3;
 }
 
@@ -487,8 +487,9 @@ button {
   width: 14px;
 }
 .customer-reviews .review .each-customer-review-container .customer-comment {
+  margin-top: 0.7em;
   text-align: justify;
-  line-height: 1.3;
+  line-height: 1.4;
 }
 .customer-reviews .review .each-customer-review-container .customer-comment span {
   color: #353a3f;
