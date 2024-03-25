@@ -498,34 +498,93 @@ button {
   padding: 0.2em;
 }
 
-.plans .plan-type-btn-container {
+.plans {
+  color: #353a3f;
+}
+.plans .plans-container {
+  position: relative;
+}
+.plans .plans-container .arrors-container {
+  display: flex;
+  position: absolute;
+  top: 6px;
+  right: 1em;
+}
+.plans .plans-container .arrors-container img {
+  width: 16px;
+}
+.plans .plans-container .plan-type-btn-container {
   margin-top: 1.25em;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.plans .monthly,
-.plans .yearly {
+.plans .plans-container .monthly,
+.plans .plans-container .yearly {
   font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+  font-family: "Garet", sans-serif;
   padding: 0.75em;
   font-weight: 700;
 }
-.plans .monthly {
+.plans .plans-container .monthly {
   background: #7868d8;
   color: #fff;
   border-radius: 8px 0px 0px 8px;
-  border: 1px solid #7868d8;
 }
-.plans .yearly {
+.plans .plans-container .yearly {
   color: #737373;
   background: none;
   border-style: solid;
-  border-width: 2px 2px 2px 0; /* top right bottom left */
+  border-width: 1px 1px 1px 0; /* top right bottom left */
   border-color: #a6a6a6;
   border-radius: 0px 8px 8px 0px;
 }
-.plans .plain-details {
+.plans .plans-container .plan-details {
   margin-top: 2em;
+  background: #fff;
+  max-width: 240px;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0px 2px 30px 0px rgba(0, 0, 0, 0.1019607843);
+}
+.plans .plans-container .plan-details .plan-details-intro {
+  text-align: center;
+}
+.plans .plans-container .plan-details .plan-details-intro .title {
+  font-family: "Garet", sans-serif;
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+  font-weight: 850;
+}
+.plans .plans-container .plan-details .plan-details-intro .price {
+  margin-top: 0.5em;
+  font-size: 2rem;
+  color: #5cd5dd;
+  font-weight: 700;
+}
+.plans .plans-container .plan-details .plan-details-intro .duration {
+  font-size: 14px;
+  font-weight: 400;
+}
+.plans .plans-container .plan-details .plan-benefits .check-icon {
+  width: 18px;
+}
+.plans .plans-container .plan-details .plan-benefits ul li {
+  display: flex;
+  align-items: center;
+  margin-top: 0.75em;
+  gap: 10px;
+}
+.plans .plans-container .plan-details .plan-benefits .choose-plan-btn-container {
+  text-align: center;
+}
+.plans .plans-container .plan-details .plan-benefits .choose-plan-btn-container .choose-plan-btn {
+  background: #fff;
+  color: #483e82;
+  border: 1px solid #483e82;
+  border-radius: 8px;
+  padding: 0.75em 1.25em;
+  margin-top: 1em;
+  text-align: center;
 }
 
 .container {

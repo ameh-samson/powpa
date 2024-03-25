@@ -1,35 +1,105 @@
 .plans {
-  .plan-type-btn-container {
-    margin-top: 1.25em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  color: $text-color-dark;
 
-  .monthly,
-  .yearly {
-    font-size: $fs-heading-3;
-    padding: 0.75em;
-    font-weight: 700;
-  }
+  .plans-container {
+    position: relative;
 
-  .monthly {
-    background: $color-primary;
-    color: $color-white;
-    border-radius: 8px 0px 0px 8px;
-    border: 1px solid $color-primary;
-  }
+    .arrors-container {
+      display: flex;
+      position: absolute;
+      top: 6px;
+      right: 1em;
 
-  .yearly {
-    color: $text-color-light;
-    background: none;
-    border-style: solid;
-    border-width: 2px 2px 2px 0; /* top right bottom left */
-    border-color: #a6a6a6;
-    border-radius: 0px 8px 8px 0px;
-  }
+      img {
+        width: 16px;
+      }
+    }
 
-  .plain-details {
-    margin-top: 2em;
+    .plan-type-btn-container {
+      margin-top: 1.25em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .monthly,
+    .yearly {
+      font-size: $fs-heading-3;
+      font-family: $garet-font;
+      padding: 0.75em;
+      font-weight: 700;
+    }
+
+    .monthly {
+      background: $color-primary;
+      color: $color-white;
+      border-radius: 8px 0px 0px 8px;
+    }
+
+    .yearly {
+      color: $text-color-light;
+      background: none;
+      border-style: solid;
+      border-width: 1px 1px 1px 0; /* top right bottom left */
+      border-color: #a6a6a6;
+      border-radius: 0px 8px 8px 0px;
+    }
+
+    .plan-details {
+      margin-top: 2em;
+      background: $color-white;
+      max-width: 240px;
+      padding: 1em;
+      border-radius: 8px;
+      box-shadow: 0px 2px 30px 0px #0000001a;
+
+      .plan-details-intro {
+        text-align: center;
+        .title {
+          font-family: $garet-font;
+          font-size: $fs-heading-3;
+          font-weight: 850;
+        }
+
+        .price {
+          margin-top: 0.5em;
+          font-size: 2rem;
+          color: $color-accent;
+          font-weight: 700;
+        }
+
+        .duration {
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+
+      .plan-benefits {
+        .check-icon {
+          width: 18px;
+        }
+
+        ul li {
+          display: flex;
+          align-items: center;
+          margin-top: 0.75em;
+          gap: 10px;
+        }
+
+        .choose-plan-btn-container {
+          text-align: center;
+
+          .choose-plan-btn {
+            background: $color-white;
+            color: $color-primary-dark;
+            border: 1px solid $color-primary-dark;
+            border-radius: 8px;
+            padding: 0.75em 1.25em;
+            margin-top: 1em;
+            text-align: center;
+          }
+        }
+      }
+    }
   }
 }
