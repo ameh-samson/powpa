@@ -8,7 +8,6 @@
       href="/src/assets/img/favicon.ico"
       type="image/x-icon"
     />
-
     <!-- Link to compiled CSS file -->
     <link rel="stylesheet" href="src/css/style.css" />
 
@@ -97,7 +96,7 @@
       <section class="partners">
         <div class="container partners-container">
           <div class="left col row">
-            <!-- <button class="slider-button-left"><</button> -->
+            <button class="slider-button-left"><</button>
             <h2>Companies that trusts us</h2>
             <div class="slider-container">
               <div class="partners-details row">
@@ -126,13 +125,15 @@
                 />
               </div>
             </div>
-            <!-- <button class="slider-button-right">></button> -->
+            <button class="slider-button-right">></button>
           </div>
 
           <div class="right">
             <img src="src/assets/img/phone.png" alt="" />
           </div>
         </div>
+        <!-- bg image -->
+        <img src="./src/assets/img/bg-1.svg" alt="" class="bg-svg-1" />
       </section>
       <!-- OUR PARTNERS SECTION END HERE -->
 
@@ -210,6 +211,9 @@
 
       <!-- SIGNUP PROCESS SECTION START HERE-->
       <section class="signup-process">
+        <!-- bg-img -->
+        <img src="./src/assets/img/bg-2.svg" alt="" class="bg-svg-2" />
+
         <div class="container process-container">
           <h2>Easy Sign up Process</h2>
           <p>
@@ -219,93 +223,12 @@
 
           <div class="signup-process-details">
             <div class="process">
-              <!-- step 1 -->
-              <div class="row">
-                <div
-                  class="row"
-                  style="
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                  "
-                >
-                  <img
-                    style="width: 30px"
-                    src="./src/assets/img/checkbox.png"
-                    alt=""
-                  />
-                  <span>step1</span>
-                  <img
-                    style="width: 6px"
-                    src="./src/assets/img/process-50.png"
-                    alt=""
-                  />
-                </div>
-                <div class="row" style="flex-direction: column">
-                  <p>Register</p>
-                  <ul>
-                    <li>whatsapp Number</li>
-                    <li>Email & Password</li>
-                  </ul>
-                </div>
-              </div>
-
-              <!-- step 2 -->
-              <div class="row">
-                <div
-                  class="row"
-                  style="
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                  "
-                >
-                  <img
-                    style="width: 30px"
-                    src="./src/assets/img/checkbox.png"
-                    alt=""
-                  />
-                  <span>step1</span>
-                  <img
-                    style="width: 6px"
-                    src="./src/assets/img/process-50.png"
-                    alt=""
-                  />
-                </div>
-                <div class="row" style="flex-direction: column">
-                  <p>Register</p>
-                  <ul>
-                    <li>whatsapp Number</li>
-                    <li>Email & Password</li>
-                  </ul>
-                </div>
-              </div>
-
-              <!-- step 3 -->
-              <div class="row">
-                <div
-                  class="row"
-                  style="
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                  "
-                >
-                  <img
-                    style="width: 30px"
-                    src="./src/assets/img/checkbox.png"
-                    alt=""
-                  />
-                  <span>step1</span>
-                </div>
-                <div class="row" style="flex-direction: column">
-                  <p>Register</p>
-                  <ul>
-                    <li>whatsapp Number</li>
-                    <li>Email & Password</li>
-                  </ul>
-                </div>
-              </div>
+              <!-- steps -->
+              <img
+                src="./src/assets/img/sign-up-steps-mobile.png"
+                alt=""
+                class="steps-mobile-img"
+              />
             </div>
           </div>
         </div>
@@ -316,7 +239,7 @@
       <section class="get-started">
         <div class="container">
           <div class="get-started-details">
-            <div class="col-1">
+            <div class="get-started-intro">
               <h2>Start Trial</h2>
               <p>
                 Submit your email and whatsApp number to experience Powpa for
@@ -324,7 +247,7 @@
               </p>
             </div>
             <!-- get started form here -->
-            <form class="get-started-form col-2">
+            <form class="get-started-form-input">
               <div>
                 <label for="emain">Email</label>
                 <input type="email" id="email" name="email" required />
@@ -344,7 +267,7 @@
               <button type="submit">Start free trial</button>
             </form>
 
-            <div class="right col-3">
+            <div class="right get-started-img">
               <img src="./src/assets/img/get-started.png" alt="" />
             </div>
           </div>
@@ -354,20 +277,30 @@
 
       <!-- CUSTOMER REVIEWS SECTION START HERE-->
       <section class="customer-reviews">
+        <!-- bg-img -->
+        <img src="./src/assets/img/bg-1.svg" alt="" class="bg-svg-1" />
+
         <div class="container">
+          <h2>Easy Sign up Process</h2>
           <div class="reviews-container">
+            <!-- reviews -->
             <div class="review">
-              <div>
-                <img src="./src/assets/img/user_img.png" alt="" />
-                <div>
-                  <p>Adebimpe Salami</p>
-                  <img src="./src/assets/img/full-star-icon.svg" alt="" />
-                  <img src="./src/assets/img/full-star-icon.svg" alt="" />
-                  <img src="./src/assets/img/full-star-icon.svg" alt="" />
-                  <img src="./src/assets/img/full-star-icon.svg" alt="" />
-                  <img src="./src/assets/img/full-star-icon.svg" alt="" />
+              <div class="each-customer-review-container">
+                <div class="customer-details row">
+                  <img src="./src/assets/img/user_img.png" alt="" />
+
+                  <div class="customers-rating">
+                    <p>Adebimpe Salami</p>
+                    <div class="row customers-rating-stars-container">
+                      <img src="./src/assets/img/full-star-icon.svg" alt="" />
+                      <img src="./src/assets/img/full-star-icon.svg" alt="" />
+                      <img src="./src/assets/img/full-star-icon.svg" alt="" />
+                      <img src="./src/assets/img/full-star-icon.svg" alt="" />
+                      <img src="./src/assets/img/full-star-icon.svg" alt="" />
+                    </div>
+                  </div>
                 </div>
-                <p>
+                <p class="customer-comment">
                   Thanks to POWPA, I'm thrilled to be able
                   <span>to monitor my sales rates effortlessly!</span> As a
                   business owner, having the ability to analyze sales
@@ -376,20 +309,25 @@
                   POWPA provides!
                 </p>
               </div>
-            </div>
 
-            <div class="review">
-              <div>
-                <img src="./assets/img/user_img.png" alt="" />
-                <div>
-                  <p>Adebimpe Salami</p>
-                  <img src="./assets/img/full-star-icon.svg" alt="" />
-                  <img src="./assets/img/full-star-icon.svg" alt="" />
-                  <img src="./assets/img/full-star-icon.svg" alt="" />
-                  <img src="./assets/img/full-star-icon.svg" alt="" />
-                  <img src="./assets/img/full-star-icon.svg" alt="" />
+              <!-- reviews 2 -->
+
+              <div class="each-customer-review-container">
+                <div class="customer-details row">
+                  <img src="./src/assets/img/user_img.png" alt="" />
+
+                  <div class="customers-rating">
+                    <p>Adebimpe Salami</p>
+                    <div class="row customers-rating-stars-container">
+                      <img src="./src/assets/img/full-star-icon.svg" alt="" />
+                      <img src="./src/assets/img/full-star-icon.svg" alt="" />
+                      <img src="./src/assets/img/full-star-icon.svg" alt="" />
+                      <img src="./src/assets/img/full-star-icon.svg" alt="" />
+                      <img src="./src/assets/img/full-star-icon.svg" alt="" />
+                    </div>
+                  </div>
                 </div>
-                <p>
+                <p class="customer-comment">
                   Thanks to POWPA, I'm thrilled to be able
                   <span>to monitor my sales rates effortlessly!</span> As a
                   business owner, having the ability to analyze sales
@@ -398,42 +336,25 @@
                   POWPA provides!
                 </p>
               </div>
-            </div>
 
-            <div class="review">
-              <div>
-                <img src="./assets/img/user_img.png" alt="" />
-                <div>
-                  <p>Adebimpe Salami</p>
-                  <img src="./assets/img/full-star-icon.svg" alt="" />
-                  <img src="./assets/img/full-star-icon.svg" alt="" />
-                  <img src="./assets/img/full-star-icon.svg" alt="" />
-                  <img src="./assets/img/full-star-icon.svg" alt="" />
-                  <img src="./assets/img/full-star-icon.svg" alt="" />
-                </div>
-                <p>
-                  Thanks to POWPA, I'm thrilled to be able
-                  <span>to monitor my sales rates effortlessly!</span> As a
-                  business owner, having the ability to analyze sales
-                  performance in real-time has been a game-changer for me.
-                  Grateful for the seamless experience and insightful analytics
-                  POWPA provides!
-                </p>
-              </div>
-            </div>
+              <!-- reviews 3 -->
 
-            <div class="review">
-              <div>
-                <img src="./assets/img/user_img.png" alt="" />
-                <div>
-                  <p>Adebimpe Salami</p>
-                  <img src="./assets/img/full-star-icon.svg" alt="" />
-                  <img src="./assets/img/full-star-icon.svg" alt="" />
-                  <img src="./assets/img/full-star-icon.svg" alt="" />
-                  <img src="./assets/img/full-star-icon.svg" alt="" />
-                  <img src="./assets/img/full-star-icon.svg" alt="" />
+              <div class="each-customer-review-container">
+                <div class="customer-details row">
+                  <img src="./src/assets/img/user_img.png" alt="" />
+
+                  <div class="customers-rating">
+                    <p>Adebimpe Salami</p>
+                    <div class="row customers-rating-stars-container">
+                      <img src="./src/assets/img/full-star-icon.svg" alt="" />
+                      <img src="./src/assets/img/full-star-icon.svg" alt="" />
+                      <img src="./src/assets/img/full-star-icon.svg" alt="" />
+                      <img src="./src/assets/img/full-star-icon.svg" alt="" />
+                      <img src="./src/assets/img/full-star-icon.svg" alt="" />
+                    </div>
+                  </div>
                 </div>
-                <p>
+                <p class="customer-comment">
                   Thanks to POWPA, I'm thrilled to be able
                   <span>to monitor my sales rates effortlessly!</span> As a
                   business owner, having the ability to analyze sales
@@ -466,12 +387,12 @@
               <div class="col">
                 <ul>
                   <li>
-                    <img src="./assets/img/checkbox-2.png" alt="" />
+                    <img src=".src/assets/img/checkbox-2.png" alt="" />
                     <span>Domain - .bis.ng only</span>
                   </li>
 
                   <li>
-                    <img src="./assets/img/checkbox-2.png" alt="" />
+                    <img src=".src/assets/img/checkbox-2.png" alt="" />
                     <span>Domain - .bis.ng only</span>
                   </li>
 

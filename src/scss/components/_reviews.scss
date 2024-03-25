@@ -1,0 +1,49 @@
+.customer-reviews {
+  position: relative;
+
+  .bg-svg-1 {
+    position: absolute;
+    width: 328px;
+    top: -300px;
+    z-index: -1;
+    opacity: 0.07;
+  }
+
+  .review {
+    margin-block: 1.25em;
+
+    .each-customer-review-container {
+      margin-block: 2em;
+
+      .customer-details {
+        justify-content: start;
+        gap: 0.5em;
+
+        img {
+          width: 32px;
+        }
+
+        .customers-rating {
+          margin-top: 1.25em;
+
+          .customers-rating-stars-container {
+            justify-content: start;
+
+            img {
+              width: 14px;
+            }
+          }
+        }
+      }
+
+      .customer-comment {
+        text-align: justify;
+        span {
+          color: $text-color-dark;
+          background: #ffde66;
+          padding: 0.2em;
+        }
+      }
+    }
+  }
+}

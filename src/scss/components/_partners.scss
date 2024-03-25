@@ -1,61 +1,71 @@
-.partners-container {
-  .left {
-    position: relative;
-    flex-direction: column;
+.partners {
+  position: relative;
+  .partners-container {
+    .left {
+      position: relative;
+      flex-direction: column;
 
-    .slider-button-left,
-    .slider-button-right {
-      position: absolute;
-      top: 50%;
-      outline: none;
-      border: none;
-      height: 50px;
-      width: 50px;
-      z-index: 5;
-      color: $text-color-dark;
-      display: flex;
-      cursor: pointer;
-      font-size: 2.2rem;
-      background: $btn-color;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-      top: 70px;
-    }
-
-    .slider-button-left {
-      left: -6px;
-    }
-
-    .slider-button-right {
-      right: -6px;
-    }
-
-    .slider-container {
-      width: 100%;
-      overflow-x: auto;
-      white-space: nowrap;
-
-      .partners-details {
-        gap: 1em;
-      }
-      img {
-        margin-top: 1.25em;
-        width: 200px;
-        height: 130px;
+      .slider-button-left,
+      .slider-button-right {
+        position: absolute;
+        top: 50%;
+        outline: none;
+        border: none;
+        height: 50px;
+        width: 50px;
+        z-index: 5;
+        color: $text-color-dark;
+        display: flex;
+        cursor: pointer;
+        font-size: 2.2rem;
+        background: $btn-color;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
       }
 
       .slider-button-left {
-        left: 1em;
+        left: -6px;
       }
+
       .slider-button-right {
-        right: 1em;
+        right: -6px;
       }
+
+      .slider-container {
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+
+        .partners-details {
+          gap: 1em;
+        }
+        img {
+          margin-top: 1.25em;
+          width: 200px;
+          height: 130px;
+        }
+
+        .slider-button-left {
+          left: 1em;
+        }
+        .slider-button-right {
+          right: 1em;
+        }
+      }
+    }
+
+    .right {
+      width: 262px;
+      margin: 2em auto 0;
     }
   }
 
-  .right {
-    width: 262px;
-    margin: 2em auto 0;
+  .bg-svg-1 {
+    position: absolute;
+    width: 328px;
+    top: 168px;
+    z-index: -1;
+    opacity: 0.07;
   }
 }

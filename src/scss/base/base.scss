@@ -29,3 +29,10 @@ h2 {
   font-size: $fs-heading-2;
   text-align: center;
 }
+
+form,
+label,
+input,
+button {
+  font-family: inherit;
+}
