@@ -7,6 +7,10 @@ const sr = ScrollReveal({
   reset: true,
 });
 
-sr.reveal(`.hero-title, .title, .customer-bottom`, { delay: 600 });
+sr.reveal(`.hero-title, .title, .customer-bottom, .hero-video,`, {
+  delay: 600,
+});
+
 sr.reveal(`.hero-text, .cta`, { delay: 700 });
-sr.reveal(`.hero-video, .customer-top`, { delay: 900, origin: "top" });
+
+sr.reveal(` .customer-top`, { delay: 900, origin: "top" });
