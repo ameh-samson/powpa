@@ -80,6 +80,7 @@
           text-align: center;
           .title {
             font-family: $garet-font;
+            font-size: 1rem;
             font-size: $fs-heading-3;
             font-weight: 850;
           }
@@ -92,7 +93,7 @@
           }
 
           .duration {
-            font-size: 14px;
+            font-size: 0.875rem;
             font-weight: 400;
           }
         }
@@ -110,6 +111,7 @@
 
             background: $color-accent;
             color: $color-white;
+            font-size: 0.875rem;
             font-size: $fs-medium3;
             font-weight: 700;
             width: 100%;

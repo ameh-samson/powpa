@@ -714,6 +714,7 @@ button {
 }
 .plans .plans-container .plan-details-container .plan-details .plan-details-intro .title {
   font-family: "Garet", sans-serif;
+  font-size: 1rem;
   font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
   font-weight: 850;
 }
@@ -724,7 +725,7 @@ button {
   font-weight: 700;
 }
 .plans .plans-container .plan-details-container .plan-details .plan-details-intro .duration {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
 }
 .plans .plans-container .plan-details-container .plan-details .addition-benefits-container {
@@ -737,6 +738,7 @@ button {
   gap: 0.5em;
   background: #5cd5dd;
   color: #fff;
+  font-size: 0.875rem;
   font-size: clamp(0.875rem, 0.8rem + 0.375vw, 1.25rem);
   font-weight: 700;
   width: 100%;
