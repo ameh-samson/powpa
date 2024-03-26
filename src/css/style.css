@@ -712,7 +712,7 @@ button {
 .plans .plans-container .plan-details-container .plan-details .plan-details-intro {
   text-align: center;
 }
-.plans .plans-container .plan-details-container .plan-details .plan-details-intro .title {
+.plans .plans-container .plan-details-container .plan-details .plan-details-intro .plan-title {
   font-family: "Garet", sans-serif;
   font-size: 1rem;
   font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
