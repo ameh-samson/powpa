@@ -12,9 +12,11 @@
   .review {
     margin-block: 1.25em;
 
-    .each-customer-review-container {
-      margin-block: 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+    gap: 2em;
 
+    .each-customer-review-container {
       .customer-details {
         justify-content: start;
         gap: 0.5em;
@@ -25,6 +27,11 @@
 
         .customers-rating {
           margin-top: 1.25em;
+
+          .reviewer-name {
+            font-size: 0.875rem;
+            font-size: $fs-medium3;
+          }
 
           .customers-rating-stars-container {
             justify-content: start;
@@ -37,6 +44,8 @@
       }
 
       .customer-comment {
+        font-size: 0.75rem;
+        font-size: $fs-review-text;
         margin-top: 0.7em;
         text-align: justify;
         line-height: 1.4;
