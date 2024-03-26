@@ -81,6 +81,10 @@ button {
   font-weight: inherit;
 }
 
+a {
+  cursor: pointer;
+}
+
 .header {
   background: #f8f8f8;
   padding-block: 1em;
@@ -106,6 +110,14 @@ button {
   background: #7868d8;
   color: #fff;
   border-radius: 8px;
+}
+.header .login .get-started:hover {
+  background: #483e82;
+}
+.header .login .get-started:active {
+  background: #f1f0fb;
+  color: #7868d8;
+  border: 1px solid #7868d8;
 }
 
 .footer {
@@ -240,10 +252,15 @@ button {
 .hero .hero-container .hero_content .hero-title {
   font-size: 2rem;
   font-size: clamp(2rem, 1.7rem + 1.5vw, 3.5rem);
-  min-width: 271px;
+  width: 271px;
   max-width: 572px;
   margin: 0 auto;
   line-height: 0.9;
+}
+@media (min-width: 390px) {
+  .hero .hero-container .hero_content .hero-title {
+    width: 100%;
+  }
 }
 .hero .hero-container .hero_content .hero-title span {
   color: #5cd5dd;
@@ -264,6 +281,14 @@ button {
   padding: 0.86em 2.36em;
   margin-bottom: 1em;
   text-transform: uppercase;
+}
+.hero .hero-container .hero_content .get-started:hover {
+  background: #483e82;
+}
+.hero .hero-container .hero_content .get-started:active {
+  background: #f1f0fb;
+  color: #7868d8;
+  border: 1px solid #7868d8;
 }
 .hero .hero-container .hero-video {
   margin-top: 2em;
@@ -293,7 +318,11 @@ button {
 }
 .partners .partners-container .left .title {
   margin-bottom: 1em;
-  align-self: start;
+}
+@media (min-width: 700px) {
+  .partners .partners-container .left .title {
+    align-self: start;
+  }
 }
 .partners .partners-container .left .slider-button-left,
 .partners .partners-container .left .slider-button-right {
@@ -341,7 +370,7 @@ button {
 }
 .partners .partners-container .left .slider-container .partners-details img {
   margin-top: 1.25em;
-  width: 200px;
+  max-width: 300px;
   height: 130px;
 }
 @media (min-width: 700px) {

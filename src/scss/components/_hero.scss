@@ -101,10 +101,14 @@
       .hero-title {
         font-size: 2rem;
         font-size: $fs-heading-1;
-        min-width: 271px;
+        width: 271px;
         max-width: 572px;
         margin: 0 auto;
         line-height: 0.9;
+
+        @media (min-width: 390px) {
+          width: 100%;
+        }
 
         span {
           color: $color-accent;
@@ -128,6 +132,15 @@
         padding: 0.86em 2.36em;
         margin-bottom: 1em;
         text-transform: uppercase;
+
+        &:hover {
+          background: $color-primary-dark;
+        }
+        &:active {
+          background: #f1f0fb;
+          color: $color-primary;
+          border: 1px solid $color-primary;
+        }
       }
     }
 
