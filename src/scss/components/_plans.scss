@@ -12,7 +12,7 @@
       gap: 0.5em;
 
       img {
-        width: 30px;
+        width: 10px;
         background: $color-white;
         box-shadow: 0px 2px 30px 0px #0000001a;
       }
@@ -48,88 +48,109 @@
       border-radius: 0px 8px 8px 0px;
     }
 
-    .plan-details {
-      margin-top: 2em;
-      background: $color-white;
-      max-width: 240px;
-      padding: 1em;
-      border-radius: 8px;
-      box-shadow: 0px 2px 30px 0px #0000001a;
+    .plan-details-container {
+      // activate horizontal scroll
+      display: flex;
+      overflow: auto;
+      scroll-snap-type: x mandatory;
+      padding: 1.5em;
+      gap: 1em;
+      scroll-padding: 1.5em;
 
-      .plan-details-intro {
-        text-align: center;
-        .title {
-          font-family: $garet-font;
-          font-size: $fs-heading-3;
-          font-weight: 850;
-        }
-
-        .price {
-          margin-top: 0.5em;
-          font-size: 2rem;
-          color: $color-accent;
-          font-weight: 700;
-        }
-
-        .duration {
-          font-size: 14px;
-          font-weight: 400;
-        }
+      @media (min-width: 700px) {
+        overflow: hidden; //deactivate horizontal scroll
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
       }
 
-      // add styles for additional benefits
+      .plan-details {
+        margin-top: 2em;
+        background: $color-white;
+        max-width: 240px;
+        padding: 1em;
+        border-radius: 8px;
+        box-shadow: 0px 2px 30px 0px #0000001a;
 
-      .addition-benefits-container {
-        text-align: center;
+        // for scrolling horizontally
+        flex: 0 0 100%;
+        scroll-snap-align: start;
 
-        button {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 0.5em;
+        .plan-details-intro {
+          text-align: center;
+          .title {
+            font-family: $garet-font;
+            font-size: $fs-heading-3;
+            font-weight: 850;
+          }
 
-          background: $color-accent;
-          color: $color-white;
-          font-size: $fs-medium3;
-          font-weight: 700;
-          width: 100%;
-          padding-block: 0.75em;
-          border-radius: 8px;
-          font-size: 0.87rem;
+          .price {
+            margin-top: 0.5em;
+            font-size: 2rem;
+            color: $color-accent;
+            font-weight: 700;
+          }
 
-          .arror {
-            width: 20px;
+          .duration {
+            font-size: 14px;
+            font-weight: 400;
           }
         }
 
-        p {
-          margin-top: 0.5em;
-        }
-      }
+        // add styles for additional benefits
 
-      .plan-benefits {
-        .check-icon {
-          width: 18px;
-        }
-
-        ul li {
-          display: flex;
-          align-items: center;
-          margin-top: 0.75em;
-          gap: 10px;
-        }
-
-        .choose-plan-btn-container {
+        .addition-benefits-container {
           text-align: center;
 
-          .choose-plan-btn {
-            background: $color-white;
-            color: $color-primary-dark;
-            border: 1px solid $color-primary-dark;
+          button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5em;
+
+            background: $color-accent;
+            color: $color-white;
+            font-size: $fs-medium3;
+            font-weight: 700;
+            width: 100%;
+            padding-block: 0.75em;
             border-radius: 8px;
-            padding: 0.75em 1.25em;
-            margin-top: 1em;
+            font-size: 0.87rem;
+
+            .arror {
+              width: 10px;
+            }
+          }
+
+          p {
+            margin-top: 0.5em;
+          }
+        }
+
+        .plan-benefits {
+          .check-icon {
+            width: 18px;
+          }
+
+          ul li {
+            display: flex;
+            align-items: center;
+            margin-top: 0.75em;
+            gap: 10px;
+          }
+
+          .choose-plan-btn-container {
             text-align: center;
+
+            .choose-plan-btn {
+              background: $color-white;
+              color: $color-primary-dark;
+              border: 1px solid $color-primary-dark;
+              border-radius: 8px;
+              padding: 0.75em 1.25em;
+              margin-top: 1em;
+              text-align: center;
+            }
           }
         }
       }
