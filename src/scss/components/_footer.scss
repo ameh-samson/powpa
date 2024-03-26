@@ -12,15 +12,24 @@
       "col-1 col-2"
       "col-3 col-3";
 
-    .col-1 {
+    @media (min-width: 800px) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "col-1 col-3 col-2 ";
+    }
+
+    .powpa-logo-col {
       grid-area: col-1;
     }
 
-    .col-2 {
+    .copyright {
       grid-area: col-3;
+
+      @media (min-width: 800px) {
+        text-align: start;
+      }
     }
 
-    .col-3 {
+    .social-icon-playstore {
       grid-area: col-2;
     }
 
@@ -37,7 +46,7 @@
     }
 
     .social-icon-playstore {
-      justify-content: start;
+      justify-self: flex-end;
       gap: 10px;
     }
 

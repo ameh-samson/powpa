@@ -120,13 +120,24 @@ button {
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "col-1 col-2" "col-3 col-3";
 }
-.footer .footer-container .col-1 {
+@media (min-width: 800px) {
+  .footer .footer-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "col-1 col-3 col-2 ";
+  }
+}
+.footer .footer-container .powpa-logo-col {
   grid-area: col-1;
 }
-.footer .footer-container .col-2 {
+.footer .footer-container .copyright {
   grid-area: col-3;
 }
-.footer .footer-container .col-3 {
+@media (min-width: 800px) {
+  .footer .footer-container .copyright {
+    text-align: start;
+  }
+}
+.footer .footer-container .social-icon-playstore {
   grid-area: col-2;
 }
 .footer .footer-container .powpa-logo {
@@ -139,7 +150,7 @@ button {
   width: 113px;
 }
 .footer .footer-container .social-icon-playstore {
-  justify-content: start;
+  justify-self: flex-end;
   gap: 10px;
 }
 .footer .footer-container p {
