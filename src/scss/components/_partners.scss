@@ -22,20 +22,11 @@
       .slider-button-left,
       .slider-button-right {
         position: absolute;
-        top: 50%;
-        outline: none;
-        border: none;
-        height: 50px;
-        width: 50px;
+        top: 60%;
+        height: 24px;
+        width: 24px;
         z-index: 5;
-        color: $text-color-dark;
-        display: flex;
         cursor: pointer;
-        font-size: 2.2rem;
-        background: $btn-color;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
 
         @media (min-width: 700px) {
           display: none;
@@ -44,6 +35,7 @@
 
       .slider-button-left {
         left: -6px;
+        transform: rotate(180deg);
       }
 
       .slider-button-right {
@@ -56,9 +48,9 @@
         white-space: nowrap;
 
         @media (min-width: 700px) {
-          width: auto; /* Reset width */
-          overflow-x: auto; /* Reset overflow-x */
-          white-space: nowrap; /* Reset white-space */
+          width: auto;
+          overflow-x: auto;
+          white-space: nowrap;
         }
 
         .partners-details {
@@ -74,8 +66,6 @@
             margin-top: 1.25em;
             width: 200px;
             height: 130px;
-            // max-width: 165px;
-            // max-height: 100%;
 
             @media (min-width: 700px) {
               margin-top: 0;

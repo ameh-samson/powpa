@@ -4,22 +4,40 @@
     grid-template-areas:
       "left"
       "right";
+    gap: 1em;
+    place-items: center;
+
+    @media (min-width: 700px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "left right";
+    }
   }
 
-  .left {
+  .laptop {
     grid-area: right;
     margin-top: 1.5em;
+
+    @media (min-width: 700px) {
+      grid-area: left;
+    }
   }
-  .right {
+  .cards {
     grid-area: left;
     margin-top: 1.5em;
     margin: 0 auto;
+    gap: 1em;
+
+    @media (min-width: 400px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: 700px) {
+      grid-area: right;
+    }
   }
 
   .card {
-    max-width: 264px;
-    max-height: 204px;
-
     flex-direction: column;
     text-align: center;
     margin-top: 1.25em;
@@ -33,12 +51,13 @@
       width: 40px;
     }
     span {
-      font-size: $fs-medium1;
+      font-size: 1rem;
       color: $text-color-dark;
+      margin-block: 1em;
     }
 
     p {
-      font-size: $fs-medium2;
+      font-size: 0.75rem;
       color: $text-color-light;
     }
   }
