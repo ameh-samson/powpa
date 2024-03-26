@@ -68,6 +68,7 @@ h2 {
 }
 
 h2 {
+  font-size: 1.5rem;
   font-size: clamp(1.5rem, 1.4rem + 0.5vw, 2rem);
   text-align: center;
 }
@@ -190,11 +191,11 @@ button {
 }
 .hero .hero-container .hero_content .hero-customer-feedback .customer-img-container:nth-child(3) {
   left: 0;
-  bottom: 21px;
+  bottom: 68px;
   flex-direction: row-reverse;
 }
 .hero .hero-container .hero_content .hero-customer-feedback .customer-img-container:nth-child(4) {
-  bottom: 65px;
+  bottom: 17px;
   right: 0;
   align-items: start;
 }
@@ -204,6 +205,7 @@ button {
   height: auto;
 }
 .hero .hero-container .hero_content .hero-customer-feedback .customer-img-container p {
+  font-size: 0.625rem;
   font-size: clamp(0.625rem, 0.55rem + 0.375vw, 1rem);
   padding: 0.5em 1em;
   border-radius: 8px;
@@ -227,8 +229,10 @@ button {
 .hero .hero-container .hero_content .hero-title {
   font-size: 2rem;
   font-size: clamp(2rem, 1.7rem + 1.5vw, 3.5rem);
+  min-width: 271px;
   max-width: 572px;
   margin: 0 auto;
+  line-height: 0.9;
 }
 .hero .hero-container .hero_content .hero-title span {
   color: #5cd5dd;
@@ -238,6 +242,7 @@ button {
   font-size: 1rem;
   font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
   line-height: 1.25;
+  max-width: 874px;
 }
 .hero .hero-container .hero_content .get-started {
   font-size: 0.875rem;
@@ -246,19 +251,38 @@ button {
   color: #fff;
   border-radius: 8px;
   padding: 0.86em 2.36em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   text-transform: uppercase;
 }
 .hero .hero-container .hero-video {
   margin-top: 2em;
 }
+.hero .hero-container .hero-video {
+  max-width: 510px;
+  margin: 0 auto;
+  border: 1px solid #fff;
+}
 
 .partners {
   position: relative;
 }
+@media (min-width: 700px) {
+  .partners .partners-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .partners .partners-container .left {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   flex-direction: column;
+}
+.partners .partners-container .left .title {
+  margin-bottom: 1em;
+  align-self: start;
 }
 .partners .partners-container .left .slider-button-left,
 .partners .partners-container .left .slider-button-right {
@@ -278,6 +302,12 @@ button {
   justify-content: center;
   border-radius: 50%;
 }
+@media (min-width: 700px) {
+  .partners .partners-container .left .slider-button-left,
+  .partners .partners-container .left .slider-button-right {
+    display: none;
+  }
+}
 .partners .partners-container .left .slider-button-left {
   left: -6px;
 }
@@ -289,13 +319,33 @@ button {
   overflow-x: auto;
   white-space: nowrap;
 }
+@media (min-width: 700px) {
+  .partners .partners-container .left .slider-container {
+    width: auto; /* Reset width */
+    overflow-x: auto; /* Reset overflow-x */
+    white-space: nowrap; /* Reset white-space */
+  }
+}
 .partners .partners-container .left .slider-container .partners-details {
+  display: flex;
+  align-items: center;
   gap: 1em;
 }
-.partners .partners-container .left .slider-container img {
+@media (min-width: 700px) {
+  .partners .partners-container .left .slider-container .partners-details {
+    flex-wrap: wrap;
+  }
+}
+.partners .partners-container .left .slider-container .partners-details img {
   margin-top: 1.25em;
   width: 200px;
   height: 130px;
+}
+@media (min-width: 700px) {
+  .partners .partners-container .left .slider-container .partners-details img {
+    margin-top: 0;
+    width: auto;
+  }
 }
 .partners .partners-container .left .slider-container .slider-button-left {
   left: 1em;
@@ -306,6 +356,11 @@ button {
 .partners .partners-container .right {
   width: 262px;
   margin: 2em auto 0;
+}
+@media (min-width: 700px) {
+  .partners .partners-container .right {
+    width: 50%;
+  }
 }
 .partners .bg-svg-1 {
   position: absolute;
@@ -327,7 +382,8 @@ button {
 .about-us .container p {
   margin-top: 1.25em;
   line-height: 1.42;
-  font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
+  font-size: 0.875rem;
+  font-size: clamp(0.875rem, 0.8rem + 0.375vw, 1.25rem);
 }
 
 .features-container .grid {

@@ -1,9 +1,23 @@
 .partners {
   position: relative;
   .partners-container {
+    @media (min-width: 700px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
     .left {
       position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       flex-direction: column;
+
+      .title {
+        margin-bottom: 1em;
+        align-self: start;
+      }
 
       .slider-button-left,
       .slider-button-right {
@@ -22,6 +36,10 @@
         align-items: center;
         justify-content: center;
         border-radius: 50%;
+
+        @media (min-width: 700px) {
+          display: none;
+        }
       }
 
       .slider-button-left {
@@ -37,13 +55,33 @@
         overflow-x: auto;
         white-space: nowrap;
 
-        .partners-details {
-          gap: 1em;
+        @media (min-width: 700px) {
+          width: auto; /* Reset width */
+          overflow-x: auto; /* Reset overflow-x */
+          white-space: nowrap; /* Reset white-space */
         }
-        img {
-          margin-top: 1.25em;
-          width: 200px;
-          height: 130px;
+
+        .partners-details {
+          display: flex;
+          align-items: center;
+          gap: 1em;
+
+          @media (min-width: 700px) {
+            flex-wrap: wrap;
+          }
+
+          img {
+            margin-top: 1.25em;
+            width: 200px;
+            height: 130px;
+            // max-width: 165px;
+            // max-height: 100%;
+
+            @media (min-width: 700px) {
+              margin-top: 0;
+              width: auto;
+            }
+          }
         }
 
         .slider-button-left {
@@ -58,6 +96,10 @@
     .right {
       width: 262px;
       margin: 2em auto 0;
+
+      @media (min-width: 700px) {
+        width: 50%;
+      }
     }
   }
 
