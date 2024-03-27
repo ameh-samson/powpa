@@ -619,6 +619,7 @@ a {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  text-align: center;
 }
 .get-started .get-started-details .get-started-form-input .btn-container .btn:active {
   background: #f1f0fb;
