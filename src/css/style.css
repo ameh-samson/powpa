@@ -1,13 +1,38 @@
+@font-face {
+  font-family: "Garet";
+  src: url("/src/assets/fonts/garet") format("ttf");
+  font-family: "Montserrat";
+  src: url("/src/assets/fonts/monsterrat") format("ttf");
+}
 *,
-::after,
-::before {
-  box-sizing: border-box;
+*:before,
+*:after {
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
 
+:root {
+  box-sizing: border-box;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  min-height: 100%;
+}
+
 html {
   box-sizing: inherit;
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+input,
+textarea,
+button {
+  font-size: inherit;
+  font-family: inherit;
 }
 
 h1,
