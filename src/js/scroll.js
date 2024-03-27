@@ -19,10 +19,12 @@ sr.reveal(` .customer-top`, {
   origin: "top",
 });
 sr.reveal(` .steps-desktop-img`, { origin: "bottom", interval: 100 });
+
 sr.reveal(
   `.card, .plan-details-container, .get-started-form-input, .get-started-img, .steps-mobile-img, .each-customer-review-container`,
   { origin: "left", interval: 100 }
 );
+
 sr.reveal(` .laptop, signup-process-details, .phone, .slider-container`, {
   right: "top",
   interval: 100,
