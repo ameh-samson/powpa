@@ -1,7 +1,7 @@
 .about-us {
   background: $color-primary;
   padding-block: 2em;
-  text-align: justify;
+  text-align: center;
 
   .container {
     h2,
@@ -14,6 +14,7 @@
       line-height: 1.42;
       font-size: 0.875rem;
       font-size: $fs-medium3;
+      font-weight: 400;
     }
   }
 }

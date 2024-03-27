@@ -32,36 +32,38 @@
       .hero-customer-feedback {
         .customer-img-container {
           position: absolute;
-          max-width: 200px;
           gap: 10px;
 
           &:nth-child(1) {
             left: 0;
-            top: 21px;
+            top: 60px;
             flex-direction: row-reverse;
           }
 
           &:nth-child(2) {
-            top: 65px;
+            top: 80px;
             right: 0;
           }
 
           &:nth-child(3) {
             left: 0;
-            bottom: 68px;
+            bottom: 100px;
             flex-direction: row-reverse;
           }
 
           &:nth-child(4) {
-            bottom: 17px;
+            bottom: 60px;
             right: 0;
-            align-items: start;
           }
 
           .customer_img {
-            width: 24px;
+            width: 30px;
             display: block;
             height: auto;
+
+            @media (min-width: 700px) {
+              width: 50px;
+            }
           }
 
           p {

@@ -15,8 +15,6 @@
       flex-direction: column;
 
       .title {
-        margin-bottom: 1em;
-
         @media (min-width: 700px) {
           align-self: start;
         }
@@ -66,9 +64,9 @@
           }
 
           img {
-            margin-top: 1.25em;
-            max-width: 300px;
+            width: 124px;
             height: 130px;
+            object-fit: contain;
 
             @media (min-width: 700px) {
               margin-top: 0;
