@@ -731,11 +731,12 @@ a {
 .plans .plans-container .plan-details-container .plan-details {
   margin-top: 2em;
   background: #fff;
-  max-width: 240px;
+  min-width: 270px;
+  max-width: 260px;
   padding: 1em;
   border-radius: 8px;
   box-shadow: 0px 2px 30px 0px rgba(0, 0, 0, 0.1019607843);
-  flex: 0 0 100%;
+  flex: 0 0 50%;
   scroll-snap-align: start;
 }
 .plans .plans-container .plan-details-container .plan-details .plan-details-intro {
@@ -801,6 +802,12 @@ a {
   padding: 0.75em 1.25em;
   margin-top: 1em;
   text-align: center;
+}
+.plans .plans-container .plan-details-container .plan-details:nth-of-type(1) {
+  height: 520px;
+}
+.plans .plans-container .plan-details-container .plan-details:nth-of-type(3) {
+  height: 500px;
 }
 
 .container {
