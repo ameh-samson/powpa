@@ -15,7 +15,7 @@
     font-size: $fs-medium2;
     gap: 0.86em;
     text-transform: uppercase;
-
+    cursor: pointer;
     &:hover {
       color: $color-primary-dark;
     }

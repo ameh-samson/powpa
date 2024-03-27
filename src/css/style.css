@@ -101,6 +101,7 @@ a {
   font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
   gap: 0.86em;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .header .login:hover {
   color: #483e82;
@@ -332,8 +333,8 @@ a {
 .partners .partners-container .left .slider-button-right {
   position: absolute;
   top: 60%;
-  height: 24px;
-  width: 24px;
+  height: 40px;
+  width: 40px;
   z-index: 5;
   cursor: pointer;
 }
@@ -479,7 +480,7 @@ a {
   margin-block: 1em;
 }
 .features-container .card p {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   color: #737373;
 }
 
@@ -608,7 +609,7 @@ a {
 }
 .get-started .get-started-details .get-started-form-input .btn-container .btn {
   display: inline-block;
-  padding: 0.75em;
+  padding: 0.75em 1em;
   font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
   font-weight: 500;
   text-transform: uppercase;
@@ -618,9 +619,6 @@ a {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-}
-.get-started .get-started-details .get-started-form-input .btn-container .btn:hover {
-  background: #483e82;
 }
 .get-started .get-started-details .get-started-form-input .btn-container .btn:active {
   background: #f1f0fb;
