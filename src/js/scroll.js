@@ -18,12 +18,12 @@ sr.reveal(` .customer-top`, {
   delay: 900,
   origin: "top",
 });
-sr.reveal(` .slider-container`, { origin: "top", interval: 100 });
+sr.reveal(` .steps-desktop-img`, { origin: "bottom", interval: 100 });
 sr.reveal(
-  `.card, .plan-details-container, .get-started-form-input, .get-started-img, .steps-mobile-img, .steps-desktop-img, .each-customer-review-container`,
+  `.card, .plan-details-container, .get-started-form-input, .get-started-img, .steps-mobile-img, .each-customer-review-container`,
   { origin: "left", interval: 100 }
 );
-sr.reveal(` .laptop, signup-process-details, .phone`, {
+sr.reveal(` .laptop, signup-process-details, .phone, .slider-container`, {
   right: "top",
   interval: 100,
 });
