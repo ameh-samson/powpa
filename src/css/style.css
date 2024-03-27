@@ -102,22 +102,26 @@ a {
   gap: 0.86em;
   text-transform: uppercase;
 }
+.header .login:hover {
+  color: #483e82;
+}
 .header .login .login-text,
 .header .login .get-started {
   padding: 0.43em 0.86em;
-}
-.header .login .get-started {
-  background: #7868d8;
-  color: #fff;
   border-radius: 8px;
 }
-.header .login .get-started:hover {
-  background: #483e82;
-}
+.header .login .login-text:active,
 .header .login .get-started:active {
   background: #f1f0fb;
   color: #7868d8;
   border: 1px solid #7868d8;
+}
+.header .login .get-started {
+  background: #7868d8;
+  color: #fff;
+}
+.header .login .get-started:hover {
+  background: #483e82;
 }
 
 .footer {
@@ -616,7 +620,12 @@ a {
   transition: background-color 0.3s ease;
 }
 .get-started .get-started-details .get-started-form-input .btn-container .btn:hover {
-  background-color: #0056b3;
+  background: #483e82;
+}
+.get-started .get-started-details .get-started-form-input .btn-container .btn:active {
+  background: #f1f0fb;
+  color: #7868d8;
+  border: 1px solid #7868d8;
 }
 
 .customer-reviews {

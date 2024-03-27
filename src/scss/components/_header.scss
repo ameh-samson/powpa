@@ -16,23 +16,28 @@
     gap: 0.86em;
     text-transform: uppercase;
 
+    &:hover {
+      color: $color-primary-dark;
+    }
+
     .login-text,
     .get-started {
       padding: 0.43em 0.86em;
+      border-radius: 8px;
+
+      &:active {
+        background: #f1f0fb;
+        color: $color-primary;
+        border: 1px solid $color-primary;
+      }
     }
 
     .get-started {
       background: $color-primary;
       color: $color-white;
-      border-radius: 8px;
 
       &:hover {
         background: $color-primary-dark;
-      }
-      &:active {
-        background: #f1f0fb;
-        color: $color-primary;
-        border: 1px solid $color-primary;
       }
     }
   }
