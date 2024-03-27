@@ -332,7 +332,7 @@ a {
 .partners .partners-container .left .slider-button-left,
 .partners .partners-container .left .slider-button-right {
   position: absolute;
-  top: 60%;
+  top: 50%;
   height: 40px;
   width: 40px;
   z-index: 5;
